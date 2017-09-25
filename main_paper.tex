@@ -1,0 +1,121 @@
+\documentclass[twoside]{article}
+\usepackage{aistats2018}
+ % If your paper is accepted, change the options for the package
+% aistats2018 as follows:
+%
+%\usepackage[accepted]{aistats2018}
+%
+% This option will print headings for the title of your paper and
+% headings for the authors names, plus a copyright note at the end of
+% the first column of the first page.
+\usepackage[colorlinks]{hyperref}            % \url&hyperlinks, unix
+\usepackage{times}
+\usepackage{color,graphicx,amsmath,amssymb,cite,epsfig,epsf,xspace,setspace,dsfont}
+\usepackage[small,bf]{caption}
+\usepackage{multicol, multirow}
+
+\newcommand{\norm}[1]{\ensuremath ||#1||}
+
+\def \E{\mathbb E}
+\def \P{\mathbb P}
+\def \R{\mathbb R}
+\def \S{\mathbb S}
+\def \B{\cal  B}
+\def \D{\cal D}
+\def \A{\cal A}
+\def \T{\cal T}
+\def \bH{{\bf H}}
+\def \bA{{\bf A}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{exercise}{Exercise}
+
+\def \bx{\boldsymbol{x}}
+\def \bnu{\boldsymbol{\nu}}
+\def \by{\boldsymbol{y}}
+\def \bz{\boldsymbol{z}}
+\def \bu{\boldsymbol{u}}
+\def \bv{\boldsymbol{v}}
+\def \bb{\boldsymbol{b}}
+\def \bg{\boldsymbol{g}}
+\def \bq{\boldsymbol{q}}
+\def \bw{\boldsymbol{w}}
+\def \br{\boldsymbol{r}}
+\def \ba{\boldsymbol{a}}
+\def \bA{\boldsymbol{A}}
+\def \bK{\boldsymbol{K}}
+\def \bB{\boldsymbol{B}}
+\def \bV{\boldsymbol{V}}
+\def \bU{\boldsymbol{U}}
+\def \bC{\boldsymbol{C}}
+\def \bR{\boldsymbol{R}}
+\def \bX{\boldsymbol{X}}
+\def \bQ{\boldsymbol{Q}}
+\def \bI{\boldsymbol{I}}
+\def \bPhi{\boldsymbol{\Phi}}
+\def \bphi{\boldsymbol{\phi}}
+\def \bSigma{\boldsymbol{\Sigma}}
+\def \balpha{\boldsymbol{\alpha}}
+\def \bbeta{\boldsymbol{\beta}}
+\def \d1{\mathds{1}}
+\def \Rad{\mathfrak{R}}
+
+\def\R{{\mathbb R}}
+\def\E{{\mathbb E}}
+\def\P{{\mathbb P}}
+\def \X{{\cal X}}
+\def \Y{{\cal Y}}
+\def \F{{\cal F}}
+\def \A{{\cal A}}
+\def \S{{\cal S}}
+\def \bparam{\bw}
+\def \param{w}
+\def \loss{f}
+\def \reg{c}
+\def \prox{\mbox{prox}_{tc}}
+\newcommand{\1}[1]{\ensuremath{{\d1}{\left\{#1\right\}}}}
+
+
+\begin{document}
+
+% If your paper is accepted and the title of your paper is very long,
+% the style will print as headings an error message. Use the following
+% command to supply a shorter title of your paper so that it can be
+% used as headings.
+%
+%\runningtitle{I use this title instead because the last one was very long}
+
+% If your paper is accepted and the number of authors is large, the
+% style will print as headings an error message. Use the following
+% command to supply a shorter version of the authors names so that
+% they can be used as headings (for example, use only the surnames)
+%
+%\runningauthor{Surname 1, Surname 2, Surname 3, ...., Surname n}
+
+\twocolumn[
+
+\aistatstitle{Linear bandits with Feature Feedback}
+
+\aistatsauthor{ Author 1 \And Author 2 \And  Author 3 }
+
+\aistatsaddress{ Institution 1 \And  Institution 2 \And Institution 3 } ]
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+\input{intro.tex}
+
+\section{Learning with Feature Feedback}\label{sec:ff}
+\input{ff.tex}
+
+\section{Theorem for tighter regret bound}\label{sec:theory}
+\input{theory.tex}
+
+\section{Algorithms}\label{sec:algo}
+\input{algo.tex}
+
+\section{Experiments}\label{sec:exp}
+\input{experiments.tex}
+
+\end{document}

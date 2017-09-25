@@ -1,0 +1,15 @@
+The usual ML approach involves providing a machine with labeled data
+(collected passively or actively).  Each training example consists of
+a vector of features $\bx \in \R^d$ and a class label $y$.  The
+feature vectors can be easily machine-generated (e.g., by extracting
+visual features from images or language features from documents).  The
+label $y$ is the key (and usually the only) piece of information provided by a
+human expert. But a person may be able to provide richer forms of
+annotation \cite{raghavan2006active,druck2009active}. In addition to
+providing a label, a person may also be able to provide an {\em
+  explanation} for the label.  For example, the person could point out
+the specific features that were most important in deciding on the correct
+label. This kind of feedback is not always trivial to obtain or model. 
+ In the context of image classification, the person could
+convey this information by indicating a region-of-interest in the
+image.
